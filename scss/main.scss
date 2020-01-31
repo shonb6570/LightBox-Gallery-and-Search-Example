@@ -1,0 +1,37 @@
+
+
+#search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 400px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid grey;
+    margin: auto;
+    border-radius: 5px;
+    height: 3em;
+    width: 40%;
+    padding: 2px 23px 2px 38px;
+    outline: 0;
+    background-color: #fafafa;
+  }
+
+  .search-icon {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 20px
+    // top: 17px;
+    // left: 12px;
+    // width: 18px;
+  }
+
+  
+  .search:hover, .search:focus {
+    border: 1px solid #00d9ff;
+    background-color: white;
+  }
