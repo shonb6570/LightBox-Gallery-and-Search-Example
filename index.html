@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="lightbox/css/lightbox.css">
+        <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap" rel="stylesheet">
     </head>
@@ -23,26 +23,28 @@
                 <input class="search" placeholder="Search" type="text" >
             </div>
             <div class="flex-img">
-                <ul class="flex-container">
-                    <li class="flex-item one"></li>
-                    <li class="flex-item two"></li>
-                    <li class="flex-item three"></li>
-                    <li class="flex-item four"></li>
-                    <li class="flex-item five"></li>
-                    <li class="flex-item six"></li>
-                    <li class="flex-item seven"></li>
-                    <li class="flex-item eight"></li>
-                    <li class="flex-item nine"></li>
-                    <li class="flex-item ten"></li>
-                    <li class="flex-item eleven"></li>
-                    <li class="flex-item twelve"></li>
-                  </ul>
+                <div class="flex-container">
+                    <a class="flex-item one" href="photos/01.jpg" data-lightbox="images" data-title="Field with clear, blue sky. Green trees and rolls of hay."></a>
+                    <a class="flex-item two" href="photos/02.jpg" data-lightbox="images" data-title="A Pale blue sky and lake. Light clouds sit jsut above the mountains."></a>
+                    <a class="flex-item three" href="photos/03.jpg" data-lightbox="images" data-title="My caption"></a>
+                    <a class="flex-item four" href="photos/04.jpg" data-lightbox="images" data-title="My caption"></a>
+                    <a class="flex-item five" href="photos/05.jpg" data-lightbox="images" data-title="My caption"></a>
+                    <a class="flex-item six" href="photos/06.jpg" data-lightbox="images" data-title="My caption"></a>
+                    <a class="flex-item seven" href="photos/07.jpg" data-lightbox="images" data-title="My caption"></a>
+                    <a class="flex-item eight" href="photos/08.jpg" data-lightbox="images" data-title="My caption"></a>
+                    <a class="flex-item nine" href="photos/09.jpg" data-lightbox="images" data-title="My caption"></a>
+                    <a class="flex-item ten" href="photos/10.jpg" data-lightbox="images" data-title="My caption"></a>
+                    <a class="flex-item eleven" href="photos/11.jpg" data-lightbox="images" data-title="My caption"></a>
+                    <a class="flex-item twelve" href="photos/12.jpg" data-lightbox="images" data-title="My caption"></a>
+                  </div>
             </div>
 
          
             
         </div class="main-wrapper">
-        <script src="lightbox/js/lightbox.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="lightbox/js/lightbox.min.js"></script>
+        <script src="jquery-searchable/jquery.searchable-1.1.0.min.js"></script>
         <script src="js/main.js" async defer></script>
     </body>
 </html>
