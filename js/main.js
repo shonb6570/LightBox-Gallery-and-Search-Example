@@ -5,7 +5,7 @@ lightbox.option({
   });
 
   $( '.flex-container' ).searchable({
-    selector      : '.lb-caption',
+    selector      : '.flex-item',
     searchField   : '.search',
     oddRow        : { 'background-color': '#f5f5f5' },
     evenRow       : { 'background-color': '#fff' },
@@ -18,9 +18,6 @@ lightbox.option({
     searchType    : 'fuzzy',
     onSearchActive : function( elem, term ) {
         elem.show();
-    },
-    onSearchEmpty: function( elem ) {
-        elem.hide();
     },
     onSearchFocus: function() {
         $( '#feedback' ).show().text( 'Type to search.' );
