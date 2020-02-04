@@ -69,6 +69,12 @@ input {
 
 // Main Styles  // 
 
+.main-wrapper {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+
 .flex-container {
   display: flex;
   flex-flow: row wrap;

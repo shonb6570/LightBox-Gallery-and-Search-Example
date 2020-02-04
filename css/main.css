@@ -41,6 +41,11 @@ input {
   font-family: "Ubuntu", sans-serif;
 }
 
+.main-wrapper {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
 .flex-container {
   display: flex;
   flex-flow: row wrap;
