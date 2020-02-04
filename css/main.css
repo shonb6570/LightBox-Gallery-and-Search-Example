@@ -166,8 +166,7 @@ input {
   }
 
   .lightboxOverlay {
-    opacity: 0.4;
-    color: 235;
+    opacity: 0.7;
   }
 }
 
