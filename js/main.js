@@ -1,3 +1,5 @@
+//Lightbox
+
 lightbox.option({
     'wrapAround': true,
     'imageFadeDuration': 800,
