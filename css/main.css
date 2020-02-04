@@ -41,11 +41,6 @@ input {
   font-family: "Ubuntu", sans-serif;
 }
 
-.main-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 .flex-container {
   display: flex;
   flex-flow: row wrap;
@@ -61,14 +56,14 @@ input {
 }
 @media only screen and (min-width: 1440px) {
   .flex-container {
-    margin: 0 15%;
+    margin: 0 12%;
   }
 }
 
 .flex-item {
   flex-grow: 1;
   padding: 30px;
-  width: 125px;
+  width: 200px;
   height: 125px;
   margin: 20px 30px;
   line-height: 150px;
@@ -77,6 +72,27 @@ input {
   font-weight: bold;
   font-size: 3em;
   text-align: center;
+}
+@media only screen and (min-width: 640px) {
+  .flex-item {
+    width: 150px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .flex-item {
+    max-width: 150px;
+    margin: 20px 12px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .flex-item {
+    margin: 20px 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .flex-item {
+    margin: 20px 30px;
+  }
 }
 
 .one {
@@ -137,6 +153,17 @@ input {
 .twelve {
   background: url("/photos/thumbnails/12.jpg") no-repeat center;
   background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .lb-outerContainer {
+    margin-top: 150px;
+  }
+
+  .lightboxOverlay {
+    opacity: 0.4;
+    color: 235;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

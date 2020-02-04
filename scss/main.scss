@@ -4,6 +4,7 @@ $breakpoints: (
     "phone":        400px,
     "phone-wide":   480px,
     "phablet":      560px,
+    "phablet2":     600px,
     "tablet-small": 640px,
     "tablet":       768px,
     "tablet-wide":  1024px,
@@ -68,11 +69,6 @@ input {
 
 // Main Styles  // 
 
-.main-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 .flex-container {
   display: flex;
   flex-flow: row wrap;
@@ -84,14 +80,14 @@ input {
     margin: 0 10%;
   }
   @include mq("desktop-wide"){
-    margin: 0 15%;
+    margin: 0 12%;
   }
 }
 
 .flex-item {
   flex-grow: 1;
   padding: 30px;
-  width: 125px;
+  width: 200px;
   height: 125px;
   margin: 20px 30px;
   line-height: 150px;
@@ -100,6 +96,19 @@ input {
   font-weight: bold;
   font-size: 3em;
   text-align: center;
+  @include mq("tablet-small"){
+    width: 150px;
+  }
+  @include mq("phablet2"){
+    max-width: 150px;
+    margin: 20px 12px;
+  }
+  @include mq("tablet"){
+    margin: 20px 20px;
+  }
+  @include mq("tablet"){
+    margin: 20px 30px;
+  }
 }
 
 // flex images //
@@ -155,3 +164,15 @@ input {
   background-size: cover;
 }
 
+// Lightbox style for Mobile
+
+
+@media only screen and (max-width: 600px){
+    .lb-outerContainer {
+    margin-top: 150px;
+  }
+  .lightboxOverlay {
+    opacity: 0.4;
+    color: blue($color: #1a71eb);
+  }
+}
