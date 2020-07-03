@@ -22,8 +22,18 @@ $breakpoints: (
         }
     }
 }
-
-
+//Gradient animation idea - credit: https://codepen.io/P1N2O/pen/pyBNzX
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 // Search bar styles //
 
@@ -68,6 +78,20 @@ input {
 
 
 // Main Styles  // 
+
+html {
+  background: linear-gradient(-80deg,#ffffff,#282828,rgb(12, 12, 12));
+	background-size: 350% 350%;
+	animation: gradient 8s ease-in-out infinite;
+}
+@media only screen and (min-width: 1080px) {
+ html {
+    height: 100%;
+    background: linear-gradient(120deg,#ee7752, #3e7ce6, #23a6d5, #23d5ab);
+    background-size: 350% 350%;
+    animation: gradient 10s ease-in-out infinite;
+  }
+}
 
 .main-wrapper {
   max-width: 1480px;
@@ -181,3 +205,5 @@ input {
     opacity: 0.7;
   }
 }
+
+
